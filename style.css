@@ -118,12 +118,12 @@ main {
 
 .counter-container-hr {
     background-color: var(--almost-black-blue);
-    height: 33px;
+    height: 1px;
     width: 70px;
     left: 0px;
     top: 0px;
     position: absolute;
-    opacity: 10%;
+    opacity: 40%;
     box-shadow: 1px -1px 2px var(--almost-black-blue);
 }
 
@@ -139,9 +139,6 @@ main {
 
 .counter-number {
     position: absolute;
-    bottom: 55px;
-    left: 15px;
-    top: 32.5px;
     font-family: var(--font-family);
     color: var(--primary-soft-red);
     font-size: 36px;
@@ -271,6 +268,15 @@ footer a:active {
     }
 }
 
+@media (max-width: 750px) {
+    .counter-number {
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
 
 @media (min-width: 750px) {
     .body-container {
@@ -324,11 +330,13 @@ footer a:active {
     }
 
     .counter-number {
+        position: absolute;
         font-size: 80px;
         line-height: 71px;
         letter-spacing: -2.4px;
-        top: 34.5px;
-        left: 25px;
+        top: 43%;
+        left: 50%;
+        transform: translate(-50%, -50%);
     }
 
     .counter-container-1 {
@@ -346,10 +354,12 @@ footer a:active {
     }
 
     .counter-container-hr {
-        height: 70px;
+        height: 1px;
         width: 148px;
         left: 0px;
         top: 0px;
+        opacity: 20%;
+        box-shadow: 1px -1px 2px var(--almost-black-blue);
     }
 
     .counter-container-2 {
