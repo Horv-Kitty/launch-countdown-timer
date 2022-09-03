@@ -4,7 +4,9 @@
     --white: hsl(0, 0%, 100%);
     --dark-desaturated-blue: hsl(236, 21%, 26%);
     --very-dark-blue: hsl(235, 16%, 14%);
+    --container-1-color: hsl(240, 22%, 22%);
     --almost-black-blue: hsl(234, 17%, 12%);
+    --active-yellow-color: hsl(60, 95%, 79%);
     --font-family: 'Red Hat Text', sans-serif;
     --background-gradient: linear-gradient(180deg, rgb(30, 30, 40), rgb(37, 29, 44));
 }
@@ -22,18 +24,19 @@ body {
 .body-container {
     background: url('images/pattern-hills.svg') center bottom 0vh no-repeat, url('images/bg-stars.svg') center top 0vh repeat;
     max-width: 100%;
-    margin: auto;
-    padding: auto;
     background-size: 100%;
+    padding: auto;
+    margin: auto;
+
 }
 
 h1 {
     font-family: var(--font-family);
     color: var(--white);
-    font-size: 22px;
+    font-size: 18px;
     font-weight: 700;
-    line-height: 29px;
-    letter-spacing: 7.5px;
+    line-height: 24px;
+    letter-spacing: 6.1px;
     text-align: center;
     text-transform: uppercase;
     padding-top: 132px;
@@ -43,10 +46,10 @@ h1 {
 p {
     font-family: var(--font-family);
     color: var(--primary-grayish-blue);
-    font-size: 14px;
+    font-size: 7px;
     font-weight: 700;
-    line-height: 19px;
-    letter-spacing: 5.6px;
+    line-height: 9px;
+    letter-spacing: 2.9px;
     text-align: center;
     text-transform: uppercase;
 }
@@ -58,115 +61,116 @@ main {
     justify-content: center;
 }
 
-.days-counter-container,
+.days-container,
 .hours-container,
 .minutes-container {
-    margin-right: 32px;
+    margin-right: 16px;
 }
 
-.days-container {
+.counter-container {
     position: relative;
     overflow: hidden;
-    width: 148px;
-    height: 160px;
-    margin-bottom: 7px;
+    width: 70px;
+    height: 80px;
+    margin-bottom: 0px;
 }
 
 
-.days-round-right {
-    background-color: #191A23;
-    height: 12px;
-    width: 12px;
+.counter-round-right {
+    background-color: var(--almost-black-blue);
+    height: 8px;
+    width: 8px;
     border-radius: 50%;
     position: absolute;
-    top: 63px;
-    left: 141px;
+    top: 30px;
+    left: 65.5px;
 }
 
-.days-round-left {
-    background-color: #191A23;
-    height: 12px;
-    width: 12px;
+.counter-round-left {
+    background-color: var(--almost-black-blue);
+    height: 8px;
+    width: 8px;
     border-radius: 50%;
     position: absolute;
-    top: 63px;
-    left: -6px;
+    top: 30px;
+    left: -4.5px;
 }
 
-.days-container-1 {
-    background-color: #2C2C44;
-    height: 70px;
-    width: 148px;
+.counter-container-1 {
+    background-color: var(--container-1-color);
+    height: 33px;
+    width: 70px;
     left: 0px;
     top: 0px;
     border-radius: 8px 8px 0px 0px;
 }
 
-.days-container-1-opacity {
+.counter-container-1-opacity {
     position: absolute;
-    background-color: #2C2C44;
-    height: 70px;
-    width: 148px;
+    background-color: var(--container-1-color);
+    height: 33px;
+    width: 70px;
     left: 0px;
     top: 0px;
     border-radius: 8px 8px 0px 0px;
     opacity: 20%;
 }
 
-.days-container-hr {
-    background-color: #191A23;
-    height: 1px;
-    width: 148px;
+.counter-container-hr {
+    background-color: var(--almost-black-blue);
+    height: 33px;
+    width: 70px;
     left: 0px;
-    top: 70px;
+    top: 0px;
     position: absolute;
-    opacity: 40%;
-    box-shadow: 1px -1px 2px #191A23;
+    opacity: 10%;
+    box-shadow: 1px -1px 2px var(--almost-black-blue);
 }
 
-.days-container-2 {
+.counter-container-2 {
     background-color: var(--dark-desaturated-blue);
-    height: 70px;
-    width: 148px;
+    height: 33px;
+    width: 70px;
     left: 0px;
     top: 0px;
     border-radius: 0px 0px 8px 8px;
-    box-shadow: 0px 10px 1px #191A23;
+    box-shadow: 0px 5px 1px var(--almost-black-blue);
 }
 
-.days-number {
+.counter-number {
     position: absolute;
     bottom: 55px;
-    left: 25px;
-}
-
-.days-number,
-.hours-number,
-.minutes-number,
-.seconds-number {
+    left: 15px;
+    top: 32.5px;
     font-family: var(--font-family);
     color: var(--primary-soft-red);
-    font-size: 80px;
+    font-size: 36px;
     font-weight: 700;
-    line-height: 71px;
-    letter-spacing: -2.4000000953674316px;
+    line-height: 0px;
+    letter-spacing: -1px;
     text-align: center;
 }
 
 /* F O O T E R */
 
 .social-icons {
-    margin: 0 auto;
     display: flex;
+    margin: 0 auto;
     height: 24px;
     width: 24px;
-    padding-bottom: 100px;
+    padding-bottom: 50px;
 }
 
 .facebook-icon:hover,
 .pinterest-icon:hover,
 .instagram-icon:hover {
-    filter: opacity(0.5) drop-shadow(0 0 0 red)
+    filter: opacity(0.5) drop-shadow(0 0 0 red) brightness(150%);
+}
+
+.facebook-icon:active,
+.pinterest-icon:active,
+.instagram-icon:active {
+    filter: opacity(0.5) drop-shadow(0 0 0 yellow) brightness(150%);
 }
 
 
@@ -175,12 +179,15 @@ main {
     margin-right: 32px;
 }
 
+.facebook-icon {
+    margin-left: -50px;
+}
 
 footer {
-    margin-top: 230px;
+    margin-top: 160px;
     padding-bottom: 20px;
     font-weight: 300;
-    font-size: 11px;
+    font-size: 9px;
     text-align: center;
     background-color: #2F2439;
     color: var(--primary-grayish-blue);
@@ -198,5 +205,177 @@ footer a:hover {
 }
 
 footer a:active {
+    color: var(--active-yellow-color);
+}
+
+.open-source-code {
+    color: var(--primary-grayish-blue);
+    text-decoration: underline;
+}
+
+.open-source-code:hover {
     color: var(--primary-soft-red);
+}
+
+.open-source-code:active {
+    color: var(--active-yellow-color);
+}
+
+@media (max-width: 300px) {
+
+    .body-container {
+        background: url('images/pattern-hills.svg') center bottom 0vh no-repeat, url('images/bg-stars.svg') center top 0vh repeat;
+        max-width: 100%;
+        background-size: 100%;
+        padding: auto;
+        margin: auto;
+    }
+
+    h1 {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .days-container,
+    .hours-container,
+    .minutes-container {
+        margin-right: 0px;
+        margin-bottom: 10px;
+    }
+
+    main {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .social-icons {
+        padding-bottom: 80px;
+    }
+
+    footer {
+        margin-top: 50px;
+        font-size: 6px;
+        padding-bottom: 0px;
+        background-color: unset;
+    }
+}
+
+@media (min-width: 300px) {
+    .body-container {
+        background: url('images/pattern-hills.svg') center bottom 10vh no-repeat, url('images/bg-stars.svg') center top 0vh repeat;
+        max-width: 100%;
+        background-size: 100%;
+        padding: auto;
+        margin: auto;
+    }
+}
+
+
+@media (min-width: 750px) {
+    .body-container {
+        background: url('images/pattern-hills.svg') center bottom 5vh no-repeat, url('images/bg-stars.svg') center top 0vh repeat;
+        max-width: 100%;
+        background-size: 100%;
+        padding: auto;
+        margin: auto;
+    }
+
+    h1 {
+        font-size: 22px;
+        line-height: 29px;
+        letter-spacing: 7.5px;
+    }
+
+    p {
+        font-size: 14px;
+        line-height: 19px;
+        letter-spacing: 5.6px;
+    }
+
+    .counter-container {
+        width: 148px;
+        height: 160px;
+        margin-bottom: 7px;
+    }
+
+    .days-container,
+    .hours-container,
+    .minutes-container {
+        margin-right: 32px;
+    }
+
+    .counter-round-right {
+        height: 12px;
+        width: 12px;
+        border-radius: 50%;
+        position: absolute;
+        top: 63px;
+        left: 141px;
+    }
+
+    .counter-round-left {
+        height: 12px;
+        width: 12px;
+        border-radius: 50%;
+        position: absolute;
+        top: 63px;
+        left: -6px;
+    }
+
+    .counter-number {
+        font-size: 80px;
+        line-height: 71px;
+        letter-spacing: -2.4px;
+        top: 34.5px;
+        left: 25px;
+    }
+
+    .counter-container-1 {
+        height: 70px;
+        width: 148px;
+        left: 0px;
+        top: 0px;
+    }
+
+    .counter-container-1-opacity {
+        height: 70px;
+        width: 148px;
+        left: 0px;
+        top: 0px;
+    }
+
+    .counter-container-hr {
+        height: 70px;
+        width: 148px;
+        left: 0px;
+        top: 0px;
+    }
+
+    .counter-container-2 {
+        height: 70px;
+        width: 148px;
+        left: 0px;
+        top: 0px;
+        box-shadow: 0px 10px 1px var(--almost-black-blue);
+    }
+
+    .social-icons {
+        padding-bottom: 60px;
+    }
+
+    footer {
+        margin-top: 270px;
+        font-size: 11px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .body-container {
+        background: url('images/pattern-hills.svg') center bottom 0vh no-repeat, url('images/bg-stars.svg') center top 0vh repeat;
+        max-width: 100%;
+        background-size: 100%;
+        padding: auto;
+        margin: auto;
+    }
 }
