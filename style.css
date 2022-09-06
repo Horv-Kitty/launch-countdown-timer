@@ -149,9 +149,9 @@ main {
 /* F O O T E R */
 
 .social-icons {
-    display: flex;
-    justify-content: center;
     padding-bottom: 30px;
+    position: absolute;
+    bottom: 0;
 }
 
 .facebook-icon:hover,
@@ -179,15 +179,19 @@ main {
 }
 
 footer {
-    text-align: center;
-    vertical-align: middle;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     padding-bottom: 0px;
     font-weight: 300;
     font-size: 9px;
     color: var(--primary-grayish-blue);
+}
+
+.footer-text {
+    position: absolute;
+    bottom: 0;
+    padding-bottom: 0px;
 }
 
 footer a {
@@ -355,6 +359,19 @@ footer a:active {
 
     footer {
         font-size: 11px;
+    }
+
+    .social-icons {
+        padding-bottom: 50px;
+    }
+
+    .footer-text {
         padding-bottom: 20px;
+    }
+}
+
+@media (min-width: 1000px) {
+    .social-icons {
+        padding-bottom: 80px;
     }
 }
