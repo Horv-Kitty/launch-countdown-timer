@@ -81,7 +81,7 @@ main {
     border-radius: 50%;
     position: absolute;
     top: 30px;
-    left: 65.5px;
+    left: 66.5px;
 }
 
 .counter-round-left {
@@ -116,13 +116,13 @@ main {
 
 .counter-container-hr {
     background-color: var(--almost-black-blue);
-    height: 1px;
+    height: 0.1px;
     width: 70px;
     left: 0px;
-    top: 0px;
+    top: 33px;
     position: absolute;
-    opacity: 40%;
-    box-shadow: 1px -1px 2px var(--almost-black-blue);
+    opacity: 30%;
+    box-shadow: 1px -1px 10px var(--almost-black-blue);
 }
 
 .counter-container-2 {
@@ -150,10 +150,8 @@ main {
 
 .social-icons {
     display: flex;
-    margin: 0 auto;
-    height: 24px;
-    width: 24px;
-    padding-bottom: 50px;
+    justify-content: center;
+    padding-bottom: 30px;
 }
 
 .facebook-icon:hover,
@@ -168,15 +166,16 @@ main {
     filter: opacity(0.5) drop-shadow(0 0 0 yellow) brightness(150%);
 }
 
-
 .facebook-icon,
 .pinterest-icon {
     margin-right: 32px;
+    width: 14px;
+    max-width: 100%;
 }
 
-
-.facebook-icon {
-    margin-left: -50px;
+.instagram-icon {
+    width: 14px;
+    max-width: 100%;
 }
 
 footer {
@@ -219,18 +218,7 @@ footer a:active {
     color: var(--active-yellow-color);
 }
 
-
-
-
 @media (max-width: 300px) {
-
-    /* .body-container {
-        background: url('images/pattern-hills.svg') center bottom 0vh no-repeat, url('images/bg-stars.svg') center top 0vh repeat;
-        max-width: 100%;
-        background-size: 100%;
-        padding: auto;
-        margin: auto;
-    } */
 
     h1 {
         padding-top: 50px;
@@ -250,25 +238,12 @@ footer a:active {
         flex-direction: column;
     }
 
-    .social-icons {
-        padding-bottom: 80px;
-    }
 
     footer {
         font-size: 6px;
         padding-bottom: 0px;
     }
 }
-
-/* @media (min-width: 300px) {
-    .body-container {
-        background: url('images/pattern-hills.svg') center bottom 10vh no-repeat, url('images/bg-stars.svg') center top 0vh repeat;
-        max-width: 100%;
-        background-size: 100%;
-        padding: auto;
-        margin: auto;
-    }
-} */
 
 @media (max-width: 750px) {
     .counter-number {
@@ -281,13 +256,6 @@ footer a:active {
 
 
 @media (min-width: 750px) {
-    /* .body-container {
-        background: url('images/pattern-hills.svg') center bottom 5vh no-repeat, url('images/bg-stars.svg') center top 0vh repeat;
-        max-width: 100%;
-        background-size: 100%;
-        padding: auto;
-        margin: auto;
-    } */
 
     h1 {
         font-size: 22px;
@@ -359,9 +327,9 @@ footer a:active {
         height: 1px;
         width: 148px;
         left: 0px;
-        top: 0px;
-        opacity: 20%;
-        box-shadow: 1px -1px 2px var(--almost-black-blue);
+        top: 70px;
+        opacity: 30%;
+        box-shadow: 1px -1px 10px var(--almost-black-blue);
     }
 
     .counter-container-2 {
@@ -372,21 +340,16 @@ footer a:active {
         box-shadow: 0px 10px 1px var(--almost-black-blue);
     }
 
-    .social-icons {
-        padding-bottom: 60px;
+    .facebook-icon,
+    .pinterest-icon {
+        width: 24px;
+    }
+
+    .instagram-icon {
+        width: 24px;
     }
 
     footer {
         font-size: 11px;
     }
 }
-
-/* @media (min-width: 1200px) {
-    .body-container {
-        background: url('images/pattern-hills.svg') center bottom 0vh no-repeat, url('images/bg-stars.svg') center top 0vh repeat;
-        max-width: 100%;
-        background-size: 100%;
-        padding: auto;
-        margin: auto;
-    }
-} */
