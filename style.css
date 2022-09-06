@@ -243,6 +243,13 @@ footer a:active {
     }
 }
 
+@media (max-width: 550px) {
+    .social-icons {
+        padding-bottom: 80px;
+    }
+
+}
+
 @media (max-width: 750px) {
     .counter-number {
         position: absolute;
