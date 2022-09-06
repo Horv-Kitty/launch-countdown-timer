@@ -23,11 +23,9 @@ body {
 
 .body-container {
     background: url('images/pattern-hills.svg') center bottom 0vh no-repeat, url('images/bg-stars.svg') center top 0vh repeat;
-    max-width: 100%;
     background-size: 100%;
-    padding: auto;
-    margin: auto;
-
+    max-width: 100%;
+    min-height: 100vh;
 }
 
 h1 {
@@ -176,17 +174,20 @@ main {
     margin-right: 32px;
 }
 
+
 .facebook-icon {
     margin-left: -50px;
 }
 
 footer {
-    margin-top: 160px;
+    text-align: center;
+    vertical-align: middle;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
     padding-bottom: 20px;
     font-weight: 300;
     font-size: 9px;
-    text-align: center;
-    background-color: #2F2439;
     color: var(--primary-grayish-blue);
 }
 
@@ -218,15 +219,18 @@ footer a:active {
     color: var(--active-yellow-color);
 }
 
+
+
+
 @media (max-width: 300px) {
 
-    .body-container {
+    /* .body-container {
         background: url('images/pattern-hills.svg') center bottom 0vh no-repeat, url('images/bg-stars.svg') center top 0vh repeat;
         max-width: 100%;
         background-size: 100%;
         padding: auto;
         margin: auto;
-    }
+    } */
 
     h1 {
         padding-top: 50px;
@@ -251,14 +255,12 @@ footer a:active {
     }
 
     footer {
-        margin-top: 50px;
         font-size: 6px;
         padding-bottom: 0px;
-        background-color: unset;
     }
 }
 
-@media (min-width: 300px) {
+/* @media (min-width: 300px) {
     .body-container {
         background: url('images/pattern-hills.svg') center bottom 10vh no-repeat, url('images/bg-stars.svg') center top 0vh repeat;
         max-width: 100%;
@@ -266,7 +268,7 @@ footer a:active {
         padding: auto;
         margin: auto;
     }
-}
+} */
 
 @media (max-width: 750px) {
     .counter-number {
@@ -279,13 +281,13 @@ footer a:active {
 
 
 @media (min-width: 750px) {
-    .body-container {
+    /* .body-container {
         background: url('images/pattern-hills.svg') center bottom 5vh no-repeat, url('images/bg-stars.svg') center top 0vh repeat;
         max-width: 100%;
         background-size: 100%;
         padding: auto;
         margin: auto;
-    }
+    } */
 
     h1 {
         font-size: 22px;
@@ -375,12 +377,11 @@ footer a:active {
     }
 
     footer {
-        margin-top: 270px;
         font-size: 11px;
     }
 }
 
-@media (min-width: 1200px) {
+/* @media (min-width: 1200px) {
     .body-container {
         background: url('images/pattern-hills.svg') center bottom 0vh no-repeat, url('images/bg-stars.svg') center top 0vh repeat;
         max-width: 100%;
@@ -388,4 +389,4 @@ footer a:active {
         padding: auto;
         margin: auto;
     }
-}
+} */
