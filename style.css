@@ -179,7 +179,6 @@ footer {
     font-weight: 300;
     font-size: 9px;
     color: var(--primary-grayish-blue);
-    margin-top: 250px;
 }
 
 .footer-text {
@@ -234,17 +233,6 @@ footer a:active {
         display: flex;
         align-items: center;
         flex-direction: column;
-    }
-
-    footer {
-        font-size: 6px;
-        margin-top: 150px;
-    }
-}
-
-@media (min-width: 300px) {
-    footer {
-        margin-top: 380px;
     }
 }
 
@@ -368,6 +356,5 @@ footer a:active {
     footer {
         font-size: 11px;
         padding-bottom: 20px;
-        margin-top: 250px;
     }
 }
