@@ -1,4 +1,4 @@
-let countDownDate = new Date("2022/10/01 09:00:00 GMT+0200").getTime();
+let countDownDate = new Date("2022/09/21 12:00:00 GMT+0200").getTime();
 
 let count = setInterval(function () {
   let now = new Date().getTime();
@@ -13,4 +13,12 @@ let count = setInterval(function () {
   document.getElementById("hours").innerHTML = hours;
   document.getElementById("minutes").innerHTML = minutes;
   document.getElementById("seconds").innerHTML = seconds;
+
+  if (distance < 0) {
+    document.querySelector("h1").innerHTML = "We are launching now... ";
+    document.getElementById("days").innerHTML = "0";
+    document.getElementById("hours").innerHTML = "0";
+    document.getElementById("minutes").innerHTML = "0";
+    document.getElementById("seconds").innerHTML = "0";
+  }
 }, 1000);

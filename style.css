@@ -21,13 +21,6 @@ body {
     background-image: var(--background-gradient);
 }
 
-.body-container {
-    background: url('images/pattern-hills.svg') center bottom 0vh no-repeat, url('images/bg-stars.svg') center top 0vh repeat;
-    background-size: 100%;
-    max-width: 100%;
-    min-height: 100vh;
-}
-
 h1 {
     font-family: var(--font-family);
     color: var(--white);
@@ -149,9 +142,9 @@ main {
 /* F O O T E R */
 
 .social-icons {
-    padding-bottom: 30px;
     position: absolute;
     bottom: 0;
+    padding-bottom: 80px;
 }
 
 .facebook-icon:hover,
@@ -169,12 +162,12 @@ main {
 .facebook-icon,
 .pinterest-icon {
     margin-right: 32px;
-    width: 14px;
+    width: 24px;
     max-width: 100%;
 }
 
 .instagram-icon {
-    width: 14px;
+    width: 24px;
     max-width: 100%;
 }
 
@@ -186,12 +179,13 @@ footer {
     font-weight: 300;
     font-size: 9px;
     color: var(--primary-grayish-blue);
+    margin-top: 250px;
 }
 
 .footer-text {
     position: absolute;
     bottom: 0;
-    padding-bottom: 0px;
+    padding-bottom: 10px;
 }
 
 footer a {
@@ -244,26 +238,49 @@ footer a:active {
 
     footer {
         font-size: 6px;
+        margin-top: 150px;
     }
 }
 
-@media (max-width: 550px) {
-    .social-icons {
-        padding-bottom: 80px;
+@media (min-width: 300px) {
+    footer {
+        margin-top: 380px;
     }
-
 }
 
 @media (max-width: 750px) {
     .counter-number {
         position: absolute;
-        top: 40%;
+        top: 41.5%;
         left: 50%;
         transform: translate(-50%, -50%);
+    }
+
+    .body-container {
+        background: url('images/bg-stars.svg') center top 0vh repeat;
+        background-size: 100%;
+        max-width: 100%;
+        min-height: 100vh;
+    }
+
+    .hills-img {
+        position: fixed;
+        bottom: 0;
+        min-width: 100%;
     }
 }
 
 @media (min-width: 750px) {
+    .body-container {
+        background: url('images/pattern-hills.svg') center bottom 0vh no-repeat, url('images/bg-stars.svg') center top 0vh repeat;
+        background-size: 100%;
+        max-width: 100%;
+        min-height: 100vh;
+    }
+
+    .hills-img {
+        display: none;
+    }
 
     h1 {
         font-size: 22px;
@@ -295,7 +312,7 @@ footer a:active {
         border-radius: 50%;
         position: absolute;
         top: 63px;
-        left: 141px;
+        left: 141.5px;
     }
 
     .counter-round-left {
@@ -312,7 +329,7 @@ footer a:active {
         font-size: 80px;
         line-height: 71px;
         letter-spacing: -2.4px;
-        top: 43%;
+        top: 43.5%;
         left: 50%;
         transform: translate(-50%, -50%);
     }
@@ -348,30 +365,9 @@ footer a:active {
         box-shadow: 0px 10px 1px var(--almost-black-blue);
     }
 
-    .facebook-icon,
-    .pinterest-icon {
-        width: 24px;
-    }
-
-    .instagram-icon {
-        width: 24px;
-    }
-
     footer {
         font-size: 11px;
-    }
-
-    .social-icons {
-        padding-bottom: 50px;
-    }
-
-    .footer-text {
         padding-bottom: 20px;
-    }
-}
-
-@media (min-width: 1000px) {
-    .social-icons {
-        padding-bottom: 80px;
+        margin-top: 250px;
     }
 }
