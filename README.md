@@ -13,8 +13,8 @@ Users should be able to:
 
 ### Links
 
-- [Solution URL]()
-- [Live Site URL]()
+- [Solution URL](https://www.frontendmentor.io/solutions/launch-countdown-timer-solution-HUD8qM4Q5O)
+- [Live Site URL](https://launch-countdown-timer-kitti-horvath.netlify.app/)
 
 ## My process
 
