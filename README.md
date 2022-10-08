@@ -1,15 +1,16 @@
-# Launch countdown timer
+# Launch Countdown Timer
 
-This is a solution to the Launch countdown timer challenge on Frontend Mentor. Frontend Mentor challenges help you improve your coding skills by building realistic projects.
+![](images/screenshot.jpg)
+
+This is a solution to the Launch Countdown Timer challenge on Frontend Mentor.
+Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
 ### The challenge
 
 Users should be able to:
 
 - See hover states for all interactive elements on the page
-- See a live countdown timer that ticks down every second (start the count at 14 days)
-
-![](images/screenshot.jpg)
+- See a live countdown timer that ticks down every second
 
 ### Links
 
